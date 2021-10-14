@@ -17,6 +17,10 @@ public class Order {
         this.orderList = new ArrayList<>();
     }
 
+    /**
+     * add an item to the order list
+     * @param item
+     */
     public void addItem(Item item) {
         orderList.add(item);
     }
