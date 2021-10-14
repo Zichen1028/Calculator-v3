@@ -4,9 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -31,9 +29,9 @@ public class Calculator {
 
     /**
      * Algorithm of the bundle calculator
-     * @param coins
-     * @param amount
-     * @return
+     * @param numsInBundle
+     * @param quantity
+     * @return resultList   A list that is the result of the calculation
      */
     public List<Integer> calculating(List<Integer> numsInBundle, int quantity) {
         int[] nums = numsInBundle.stream().mapToInt(i->i).toArray();
