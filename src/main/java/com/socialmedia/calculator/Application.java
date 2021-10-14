@@ -14,7 +14,7 @@ public class Application {
         Order order = readFile.readFileToCreateOrder("Order.txt");
 
         Bundle bundle = new Bundle();
-        bundle.createPutBundlesToMap();
+        bundle.createAndAddBundlesInMap();
 
         Processor processor = new Processor(order, bundle);
         processor.processing();
