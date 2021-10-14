@@ -11,6 +11,10 @@ Image | IMG | 5 @ $450 10 @ $800
 Audio | Flac | 3 @ $427.50 6 @ $810 9 @ $1147.50
 Video | VID | 3 @ $570 5 @ $900 9 @ $1530
 
+## Task
+Given a brands order, you are required to determine the cost and bundle breakdown for each submission format. For simplicity, each order should contain the minimal number of bundles.
+
+
 ## Requirements
 For building and running the application you need:
 * JDK 11
