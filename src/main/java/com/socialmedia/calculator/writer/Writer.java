@@ -24,6 +24,11 @@ public class Writer {
     Order order;
     Bundle bundle;
 
+    /**
+     * Process the result of each item
+     * Then process and write the result to the output file
+     * @param outputFileName    The name of the output file
+     */
     public void writeResult(String outputFileName) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFileName))) {
             List<Item> itemList = order.getOrderList();
