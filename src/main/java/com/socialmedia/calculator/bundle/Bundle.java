@@ -22,7 +22,8 @@ public class Bundle {
     }
 
     /**
-     *
+     * Create the map of bundles for each item format
+     * Then add all the bundle maps with the format name to another map
      */
     public void createAndAddBundlesInMap() {
         createAudioBundles();
