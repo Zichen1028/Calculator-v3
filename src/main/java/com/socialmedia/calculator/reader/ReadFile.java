@@ -34,6 +34,13 @@ public class ReadFile {
         return listOfLines;
     }
 
+    /**
+     * Extract the content of the text file
+     * Write the format and the quantity for each item
+     * Push each item to a list of the Order
+     * @param fileName      The name of input file
+     * @return order        The object 'order'
+     */
     public Order readFileToCreateOrder(String fileName) {
 
         Order order = new Order();
