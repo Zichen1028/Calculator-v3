@@ -25,6 +25,6 @@ For building and running the application you need:
 * Lombok
 
 ## Running the application locally
-* Execute the main method in the de.codecentric.springbootsample.Application class from the IDE.
+* Execute the main method in the com.socialmedia.calculator.Application class from the IDE.
 
 
