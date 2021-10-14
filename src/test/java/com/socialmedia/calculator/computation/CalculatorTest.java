@@ -9,4 +9,12 @@ class CalculatorTest {
     @Test
     void calculatingChange() {
     }
+
+    @Test
+    void addX_2() {
+    }
+
+    @Test
+    void calculating() {
+    }
 }
