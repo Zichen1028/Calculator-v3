@@ -31,14 +31,16 @@ public class Processor {
     }
 
     public void processing() {
-        List<Item> itemList = order.getOrderList();
+        List<Item> itemList = this.order.getOrderList();
+        Calculator calculator = new Calculator();
+
         for (Item item : itemList) {
             String format = item.getFormat();
             int quantity = item.getQuantity();
 
             HashMap<Integer, BigDecimal> bundleMap = this.bundle.getAllProductFormatAndBundleMap().get(format);
-            List<Integer> numbersOfOneBundlelist = bundle.getNumbersInOneBundle(bundleMap);
-            List<Integer> resultList = Calculator.calculatingChange(numbersOfOneBundlelist, quantity);
+            List<Integer> numbersOfOneBundlelist = this.bundle.getNumbersInOneBundle(bundleMap);
+            List<Integer> resultList = calculator.calculating(numbersOfOneBundlelist, quantity);
             resultList.remove(0);
             Map<Integer, Long> frequencyMap = transferResultListToMap(resultList);
             item.setResultMap(frequencyMap);
