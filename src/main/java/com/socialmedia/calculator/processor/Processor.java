@@ -23,6 +23,12 @@ public class Processor {
     Order order;
     Bundle bundle;
 
+    /**
+     * Count frequency of elements in a List
+     * Then transfer the result as a map: key is the unique element, value is the frequency
+     * @param resultList
+     * @return
+     */
     public Map<Integer, Long> transferResultListToMap(List<Integer> resultList) {
         Map<Integer, Long> frequencyMap =
                 resultList.stream().collect(Collectors.groupingBy(Function.identity(),
@@ -30,6 +36,9 @@ public class Processor {
         return frequencyMap;
     }
 
+    /**
+     * Write the processed result from each item to the output txt file
+     */
     public void processing() {
         List<Item> itemList = this.order.getOrderList();
         Calculator calculator = new Calculator();
