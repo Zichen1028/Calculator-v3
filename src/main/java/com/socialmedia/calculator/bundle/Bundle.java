@@ -21,7 +21,10 @@ public class Bundle {
         this.allProductFormatAndBundleMap = new HashMap<>();
     }
 
-    public void createPutBundlesToMap() {
+    /**
+     *
+     */
+    public void createAndAddBundlesInMap() {
         createAudioBundles();
         createImageBundles();
         createVideoBundles();
