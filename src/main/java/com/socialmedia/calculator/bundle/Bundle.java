@@ -12,7 +12,7 @@ import java.util.*;
 @AllArgsConstructor
 public class Bundle {
 
-    private HashMap<String, HashMap<Integer, BigDecimal>> allProductFormatAndBundleMap;
+    private Map<String, Map<Integer, BigDecimal>> allProductFormatAndBundleMap;
 
     public Bundle() {
         this.allProductFormatAndBundleMap = new HashMap<>();
@@ -31,8 +31,8 @@ public class Bundle {
     /**
      * Create bundleMap for format 'FLAC'
      */
-    public void createAudioBundles() {
-        HashMap<Integer, BigDecimal> bundleMap = new HashMap<>();
+    private void createAudioBundles() {
+        Map<Integer, BigDecimal> bundleMap = new HashMap<>();
         bundleMap.put(3, BigDecimal.valueOf(427.50));
         bundleMap.put(6, BigDecimal.valueOf(810.0));
         bundleMap.put(9, BigDecimal.valueOf(1147.50));
@@ -43,8 +43,8 @@ public class Bundle {
     /**
      * Create bundleMap for format 'VID'
      */
-    public void createVideoBundles() {
-        HashMap<Integer, BigDecimal> bundleMap = new HashMap<>();
+    private void createVideoBundles() {
+        Map<Integer, BigDecimal> bundleMap = new HashMap<>();
         bundleMap.put(3, BigDecimal.valueOf(570));
         bundleMap.put(5, BigDecimal.valueOf(900));
         bundleMap.put(9, BigDecimal.valueOf(1530));
@@ -55,8 +55,8 @@ public class Bundle {
     /**
      * Create bundleMap for format 'IMG'
      */
-    public void createImageBundles() {
-        HashMap<Integer, BigDecimal> bundleMap = new HashMap<>();
+    private void createImageBundles() {
+        Map<Integer, BigDecimal> bundleMap = new HashMap<>();
         bundleMap.put(5, BigDecimal.valueOf(450));
         bundleMap.put(10, BigDecimal.valueOf(800));
 
@@ -69,13 +69,14 @@ public class Bundle {
      * @return
      */
     public List<Integer> getNumbersInOneBundle(Map<Integer, BigDecimal> bundlesMap) {
-        Set<Integer> keys = bundlesMap.keySet();
-        List<Integer> numbersInOneBundle = new ArrayList<>();
-
-        for (Integer key : keys) {
-            numbersInOneBundle.add(key);
-        }
-
-        return numbersInOneBundle;
+//        Set<Integer> keys = bundlesMap.keySet();
+//        List<Integer> numbersInOneBundle = new ArrayList<>();
+//
+//        for (Integer key : keys) {
+//            numbersInOneBundle.add(key);
+//        }
+//
+//        return numbersInOneBundle;
+        return new ArrayList<>(bundlesMap.keySet());
     }
 }
