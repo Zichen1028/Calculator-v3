@@ -37,7 +37,7 @@ public class Writer {
                 String format = item.getFormat();
                 writer.write(quantity + " " + format + "\n");
                 Map<Integer, Long> frequencyMap = item.getResultMap();
-                HashMap<Integer, BigDecimal> bundles = bundle.getAllProductFormatAndBundleMap().get(format);
+                Map<Integer, BigDecimal> bundles = bundle.getAllProductFormatAndBundleMap().get(format);
                 BigDecimal subTotal = new BigDecimal(0);
                 for (Map.Entry<Integer, Long> entry: frequencyMap.entrySet()) {
                     BigDecimal priceOfOneBundle = new BigDecimal(entry.getValue()).multiply(bundles.get(entry.getKey()));
