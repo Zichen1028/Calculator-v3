@@ -47,7 +47,7 @@ public class Processor {
             String format = item.getFormat();
             int quantity = item.getQuantity();
 
-            HashMap<Integer, BigDecimal> bundleMap = this.bundle.getAllProductFormatAndBundleMap().get(format);
+            Map<Integer, BigDecimal> bundleMap = this.bundle.getAllProductFormatAndBundleMap().get(format);
             List<Integer> numbersOfOneBundlelist = this.bundle.getNumbersInOneBundle(bundleMap);
             List<Integer> resultList = calculator.calculating(numbersOfOneBundlelist, quantity);
             resultList.remove(0);
