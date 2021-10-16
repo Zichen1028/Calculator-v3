@@ -1,10 +1,10 @@
 package com.socialmedia.calculator;
 
-import com.socialmedia.calculator.reader.ReadFile;
+import com.socialmedia.calculator.IOManagement.ReadFile;
 import com.socialmedia.calculator.bundle.Bundle;
 import com.socialmedia.calculator.order.Order;
 import com.socialmedia.calculator.processor.Processor;
-import com.socialmedia.calculator.writer.Writer;
+import com.socialmedia.calculator.IOManagement.Writer;
 
 public class Application {
 
