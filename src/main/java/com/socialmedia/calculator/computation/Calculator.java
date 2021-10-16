@@ -21,7 +21,7 @@ public class Calculator {
      * @param x     the number needs to be added
      * @return
      */
-    public static int[] addX(int[] arr, int x) {
+    private int[] addX(int[] arr, int x) {
         List<Integer> arrList = Arrays.stream(arr).boxed().collect(Collectors.toList());
         arrList.add(x);
         return arrList.stream().mapToInt(i->i).toArray();
