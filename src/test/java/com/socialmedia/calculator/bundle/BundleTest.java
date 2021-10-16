@@ -7,19 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BundleTest {
 
     @Test
-    void createPutBundlesToMap() {
-    }
-
-    @Test
-    void createAudioBundles() {
-    }
-
-    @Test
-    void createVideoBundles() {
-    }
-
-    @Test
-    void createImageBundles() {
+    void createAndAddBundlesInMap() {
     }
 
     @Test

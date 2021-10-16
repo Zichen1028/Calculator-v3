@@ -1,7 +1,7 @@
 package com.socialmedia.calculator.processor;
 
 import com.socialmedia.calculator.bundle.Bundle;
-import com.socialmedia.calculator.computation.Calculator;
+import com.socialmedia.calculator.computation.SolutionAlgorithm;
 import com.socialmedia.calculator.order.Item;
 import com.socialmedia.calculator.order.Order;
 import lombok.AllArgsConstructor;
@@ -37,7 +37,7 @@ public class Processor {
     /**
      * Write the processed result from each item to the output txt file
      */
-    public void processing(Order order, Calculator calculator) {
+    public void processing(Order order, SolutionAlgorithm solutionAlgorithm) {
         List<Item> itemList = order.getOrderList();
 
         for (Item item : itemList) {
@@ -46,7 +46,7 @@ public class Processor {
 
             Map<Integer, BigDecimal> bundleMap = this.bundle.getAllProductFormatAndBundleMap().get(format);
             List<Integer> numbersOfOneBundlelist = this.bundle.getNumbersInOneBundle(bundleMap);
-            List<Integer> resultList = calculator.calculating(numbersOfOneBundlelist, quantity);
+            List<Integer> resultList = solutionAlgorithm.calculateSolution(numbersOfOneBundlelist, quantity);
             resultList.remove(0);
             Map<Integer, Long> frequencyMap = transferResultListToMap(resultList);
             item.setResultMap(frequencyMap);

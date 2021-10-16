@@ -1,4 +1,4 @@
-package com.socialmedia.calculator.item;
+package com.socialmedia.calculator.order;
 
 import org.junit.jupiter.api.Test;
 

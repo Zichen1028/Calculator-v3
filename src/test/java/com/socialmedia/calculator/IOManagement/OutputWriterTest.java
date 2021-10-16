@@ -1,17 +1,13 @@
-package com.socialmedia.calculator.processor;
+package com.socialmedia.calculator.IOManagement;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ProcessorTest {
+class OutputWriterTest {
 
     @Test
-    void transferResultListToMap() {
-    }
-
-    @Test
-    void processing() {
+    void writeResult() {
     }
 
     @Test

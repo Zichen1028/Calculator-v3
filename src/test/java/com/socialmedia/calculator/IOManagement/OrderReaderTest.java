@@ -1,4 +1,4 @@
-package com.socialmedia.calculator.reader;
+package com.socialmedia.calculator.IOManagement;
 
 import org.junit.jupiter.api.Test;
 

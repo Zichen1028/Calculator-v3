@@ -4,17 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorTest {
+class SolutionAlgorithmTest {
 
     @Test
-    void calculatingChange() {
-    }
-
-    @Test
-    void addX_2() {
-    }
-
-    @Test
-    void calculating() {
+    void calculateSolution() {
     }
 }

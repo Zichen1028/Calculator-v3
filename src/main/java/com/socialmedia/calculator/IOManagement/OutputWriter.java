@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 @Setter
 @Getter
 @AllArgsConstructor
-public class Writer {
+public class OutputWriter {
 
     private Order order;
     private Bundle bundle;
@@ -49,7 +49,7 @@ public class Writer {
      * record the output content in a string for later writing
      * @return      a string to be written in the output file
      */
-    private String calculateOutputContent() {
+    private String processOutputContent() {
         List<Item> itemList = order.getOrderList();
         String outputContent = "";
         for (Item item : itemList) {
@@ -66,7 +66,7 @@ public class Writer {
      */
     public void writeResult(String outputFileName) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFileName))) {
-            String outputContent = calculateOutputContent();
+            String outputContent = processOutputContent();
             writer.write(outputContent);
         } catch (IOException ex) {
             Logger.getLogger("Writing file exception!");
