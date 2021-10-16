@@ -1,6 +1,6 @@
 package com.socialmedia.calculator;
 
-import com.socialmedia.calculator.IOManagement.ReadFile;
+import com.socialmedia.calculator.IOManagement.OrderReader;
 import com.socialmedia.calculator.bundle.Bundle;
 import com.socialmedia.calculator.computation.Calculator;
 import com.socialmedia.calculator.order.Order;
@@ -11,8 +11,8 @@ public class Application {
 
     public static void main(String[] args) {
 
-        ReadFile readFile = new ReadFile();
-        Order order = readFile.readFileToCreateOrder("Order.txt");
+        OrderReader orderReader = new OrderReader();
+        Order order = orderReader.readFileToCreateOrder("Order.txt");
 
         Bundle bundle = new Bundle();
         bundle.createAndAddBundlesInMap();

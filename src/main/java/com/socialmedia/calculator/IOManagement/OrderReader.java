@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class ReadFile {
+public class OrderReader {
 
     /**
      * Read order's information from Order.txt
