@@ -21,7 +21,7 @@ public class Calculator {
      * @param x     the number needs to be added
      * @return
      */
-    public static int[] addX_2(int[] arr, int x) {
+    public static int[] addX(int[] arr, int x) {
         List<Integer> arrList = Arrays.stream(arr).boxed().collect(Collectors.toList());
         arrList.add(x);
         return arrList.stream().mapToInt(i->i).toArray();
@@ -44,7 +44,7 @@ public class Calculator {
             for (int num : nums) {
                 if ((i >= num) && ((result[i-num] + 1) < result[i])) {
                     result[i] = result[i-num] + 1;
-                    nums_results[i] = addX_2(nums_results[i-num], num);
+                    nums_results[i] = addX(nums_results[i-num], num);
                 }
             }
         }
