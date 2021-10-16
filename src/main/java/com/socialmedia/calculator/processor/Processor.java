@@ -19,7 +19,6 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class Processor {
 
-    private Order order;
     private Bundle bundle;
 
     /**
@@ -38,9 +37,8 @@ public class Processor {
     /**
      * Write the processed result from each item to the output txt file
      */
-    public void processing() {
-        List<Item> itemList = this.order.getOrderList();
-        Calculator calculator = new Calculator();
+    public void processing(Order order, Calculator calculator) {
+        List<Item> itemList = order.getOrderList();
 
         for (Item item : itemList) {
             String format = item.getFormat();
