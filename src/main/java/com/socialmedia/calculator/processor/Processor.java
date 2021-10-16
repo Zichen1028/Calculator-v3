@@ -2,14 +2,13 @@ package com.socialmedia.calculator.processor;
 
 import com.socialmedia.calculator.bundle.Bundle;
 import com.socialmedia.calculator.computation.Calculator;
-import com.socialmedia.calculator.item.Item;
+import com.socialmedia.calculator.order.Item;
 import com.socialmedia.calculator.order.Order;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -20,8 +19,8 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class Processor {
 
-    Order order;
-    Bundle bundle;
+    private Order order;
+    private Bundle bundle;
 
     /**
      * Count frequency of elements in a List
@@ -29,7 +28,7 @@ public class Processor {
      * @param resultList
      * @return
      */
-    public Map<Integer, Long> transferResultListToMap(List<Integer> resultList) {
+    private Map<Integer, Long> transferResultListToMap(List<Integer> resultList) {
         Map<Integer, Long> frequencyMap =
                 resultList.stream().collect(Collectors.groupingBy(Function.identity(),
                         Collectors.counting()));

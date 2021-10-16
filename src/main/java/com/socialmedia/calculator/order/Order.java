@@ -1,6 +1,5 @@
 package com.socialmedia.calculator.order;
 
-import com.socialmedia.calculator.item.Item;
 import lombok.Getter;
 import lombok.Setter;
 

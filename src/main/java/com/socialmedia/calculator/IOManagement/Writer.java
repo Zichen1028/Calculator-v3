@@ -1,7 +1,7 @@
-package com.socialmedia.calculator.writer;
+package com.socialmedia.calculator.IOManagement;
 
 import com.socialmedia.calculator.bundle.Bundle;
-import com.socialmedia.calculator.item.Item;
+import com.socialmedia.calculator.order.Item;
 import com.socialmedia.calculator.order.Order;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,7 +11,6 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
@@ -21,8 +20,8 @@ import java.util.logging.Logger;
 @AllArgsConstructor
 public class Writer {
 
-    Order order;
-    Bundle bundle;
+    private Order order;
+    private Bundle bundle;
 
     /**
      * Process the result of each item
