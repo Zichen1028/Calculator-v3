@@ -5,10 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Setter
 @Getter
@@ -71,7 +68,7 @@ public class Bundle {
      * @param bundlesMap
      * @return
      */
-    public List<Integer> getNumbersInOneBundle(HashMap<Integer, BigDecimal> bundlesMap) {
+    public List<Integer> getNumbersInOneBundle(Map<Integer, BigDecimal> bundlesMap) {
         Set<Integer> keys = bundlesMap.keySet();
         List<Integer> numbersInOneBundle = new ArrayList<>();
 
