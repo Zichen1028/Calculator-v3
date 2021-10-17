@@ -1,11 +1,11 @@
 package com.socialmedia.calculator;
 
-import com.socialmedia.calculator.IOManagement.OrderReader;
+import com.socialmedia.calculator.iomanagement.OrderReader;
 import com.socialmedia.calculator.bundle.Bundle;
 import com.socialmedia.calculator.computation.SolutionAlgorithm;
 import com.socialmedia.calculator.model.Order;
-import com.socialmedia.calculator.calculatedResultProcessor.calculatedResultProcessor;
-import com.socialmedia.calculator.IOManagement.OutputWriter;
+import com.socialmedia.calculator.calculatedresultprocessor.calculatedResultProcessor;
+import com.socialmedia.calculator.iomanagement.OutputWriter;
 
 public class Application {
 

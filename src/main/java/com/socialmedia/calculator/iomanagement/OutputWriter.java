@@ -1,4 +1,4 @@
-package com.socialmedia.calculator.IOManagement;
+package com.socialmedia.calculator.iomanagement;
 
 import com.socialmedia.calculator.bundle.Bundle;
 import com.socialmedia.calculator.model.Item;

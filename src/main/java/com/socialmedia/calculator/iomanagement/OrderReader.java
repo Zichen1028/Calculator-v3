@@ -1,4 +1,4 @@
-package com.socialmedia.calculator.IOManagement;
+package com.socialmedia.calculator.iomanagement;
 
 import com.socialmedia.calculator.model.Item;
 import com.socialmedia.calculator.model.Order;

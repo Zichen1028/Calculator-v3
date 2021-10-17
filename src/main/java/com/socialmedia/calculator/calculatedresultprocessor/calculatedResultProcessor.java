@@ -1,4 +1,4 @@
-package com.socialmedia.calculator.calculatedResultProcessor;
+package com.socialmedia.calculator.calculatedresultprocessor;
 
 import com.socialmedia.calculator.bundle.Bundle;
 import com.socialmedia.calculator.computation.SolutionAlgorithm;

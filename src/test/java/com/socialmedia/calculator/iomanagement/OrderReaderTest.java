@@ -1,8 +1,6 @@
-package com.socialmedia.calculator.IOManagement;
+package com.socialmedia.calculator.iomanagement;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class OrderReaderTest {
 
