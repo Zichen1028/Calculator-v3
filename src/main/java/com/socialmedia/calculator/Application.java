@@ -20,7 +20,7 @@ public class Application {
         SolutionAlgorithm solutionAlgorithm = new SolutionAlgorithm();
 
         calculatedResultProcessor calculatedResultProcessor = new calculatedResultProcessor(bundle);
-        calculatedResultProcessor.transferResultToFrequencyMap(order, solutionAlgorithm);
+        calculatedResultProcessor.transferAndSetCalculatedResult(order, solutionAlgorithm);
 
         OutputWriter writer = new OutputWriter(order, bundle);
         writer.writeResult("Output.txt");
