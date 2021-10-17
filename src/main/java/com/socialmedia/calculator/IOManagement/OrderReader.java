@@ -1,7 +1,7 @@
 package com.socialmedia.calculator.IOManagement;
 
-import com.socialmedia.calculator.order.Item;
-import com.socialmedia.calculator.order.Order;
+import com.socialmedia.calculator.model.Item;
+import com.socialmedia.calculator.model.Order;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

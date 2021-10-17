@@ -1,8 +1,6 @@
-package com.socialmedia.calculator.order;
+package com.socialmedia.calculator.model;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class OrderTest {
 

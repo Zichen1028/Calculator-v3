@@ -1,4 +1,4 @@
-package com.socialmedia.calculator.order;
+package com.socialmedia.calculator.model;
 
 import lombok.Getter;
 import lombok.Setter;

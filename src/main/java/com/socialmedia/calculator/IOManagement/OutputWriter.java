@@ -1,8 +1,8 @@
 package com.socialmedia.calculator.IOManagement;
 
 import com.socialmedia.calculator.bundle.Bundle;
-import com.socialmedia.calculator.order.Item;
-import com.socialmedia.calculator.order.Order;
+import com.socialmedia.calculator.model.Item;
+import com.socialmedia.calculator.model.Order;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
