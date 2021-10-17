@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @Setter
 @Getter
 @AllArgsConstructor
-public class calculatedResultProcessor {
+public class CalculatedResultProcessor {
 
     private Bundle bundle;
 

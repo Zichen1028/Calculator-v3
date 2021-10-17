@@ -4,7 +4,7 @@ import com.socialmedia.calculator.iomanagement.OrderReader;
 import com.socialmedia.calculator.bundle.Bundle;
 import com.socialmedia.calculator.computation.SolutionAlgorithm;
 import com.socialmedia.calculator.model.Order;
-import com.socialmedia.calculator.calculatedresultprocessor.calculatedResultProcessor;
+import com.socialmedia.calculator.calculatedresultprocessor.CalculatedResultProcessor;
 import com.socialmedia.calculator.iomanagement.OutputWriter;
 
 public class Application {
@@ -19,7 +19,7 @@ public class Application {
 
         SolutionAlgorithm solutionAlgorithm = new SolutionAlgorithm();
 
-        calculatedResultProcessor calculatedResultProcessor = new calculatedResultProcessor(bundle);
+        CalculatedResultProcessor calculatedResultProcessor = new CalculatedResultProcessor(bundle);
         calculatedResultProcessor.transferAndSetCalculatedResult(order, solutionAlgorithm);
 
         OutputWriter writer = new OutputWriter(order, bundle);
