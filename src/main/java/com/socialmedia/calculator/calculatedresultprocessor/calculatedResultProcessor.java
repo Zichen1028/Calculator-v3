@@ -27,7 +27,7 @@ public class calculatedResultProcessor {
      * @param resultList
      * @return
      */
-    private Map<Integer, Long> transferResultListToMap(List<Integer> resultList) {
+    private Map<Integer, Long> transferResultListToFrequencyMap(List<Integer> resultList) {
         Map<Integer, Long> frequencyMap =
                 resultList.stream().collect(Collectors.groupingBy(Function.identity(),
                         Collectors.counting()));
@@ -48,7 +48,7 @@ public class calculatedResultProcessor {
             List<Integer> numbersOfOneBundlelist = this.bundle.getNumbersInOneBundle(bundleMap);
             List<Integer> resultList = solutionAlgorithm.calculateSolution(numbersOfOneBundlelist, quantity);
             resultList.remove(0);
-            Map<Integer, Long> frequencyMap = transferResultListToMap(resultList);
+            Map<Integer, Long> frequencyMap = transferResultListToFrequencyMap(resultList);
             item.setResultMap(frequencyMap);
         }
     }
