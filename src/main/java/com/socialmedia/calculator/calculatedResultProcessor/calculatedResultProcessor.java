@@ -1,4 +1,4 @@
-package com.socialmedia.calculator.processor;
+package com.socialmedia.calculator.calculatedResultProcessor;
 
 import com.socialmedia.calculator.bundle.Bundle;
 import com.socialmedia.calculator.computation.SolutionAlgorithm;
@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @Setter
 @Getter
 @AllArgsConstructor
-public class Processor {
+public class calculatedResultProcessor {
 
     private Bundle bundle;
 

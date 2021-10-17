@@ -4,7 +4,7 @@ import com.socialmedia.calculator.IOManagement.OrderReader;
 import com.socialmedia.calculator.bundle.Bundle;
 import com.socialmedia.calculator.computation.SolutionAlgorithm;
 import com.socialmedia.calculator.model.Order;
-import com.socialmedia.calculator.processor.Processor;
+import com.socialmedia.calculator.calculatedResultProcessor.calculatedResultProcessor;
 import com.socialmedia.calculator.IOManagement.OutputWriter;
 
 public class Application {
@@ -19,8 +19,8 @@ public class Application {
 
         SolutionAlgorithm solutionAlgorithm = new SolutionAlgorithm();
 
-        Processor processor = new Processor(bundle);
-        processor.transferResultToFrequencyMap(order, solutionAlgorithm);
+        calculatedResultProcessor calculatedResultProcessor = new calculatedResultProcessor(bundle);
+        calculatedResultProcessor.transferResultToFrequencyMap(order, solutionAlgorithm);
 
         OutputWriter writer = new OutputWriter(order, bundle);
         writer.writeResult("Output.txt");
