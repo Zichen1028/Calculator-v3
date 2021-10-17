@@ -37,7 +37,7 @@ public class Processor {
     /**
      * Write the processed result from each item to the output txt file
      */
-    public void processing(Order order, SolutionAlgorithm solutionAlgorithm) {
+    public void transferResultToFrequencyMap(Order order, SolutionAlgorithm solutionAlgorithm) {
         List<Item> itemList = order.getOrderList();
 
         for (Item item : itemList) {
